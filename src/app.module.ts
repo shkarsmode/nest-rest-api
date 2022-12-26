@@ -14,7 +14,7 @@ const environment = process.env.NODE_ENV || 'development';
         ProductsModule,
 
         ConfigModule.forRoot({
-            envFilePath: `.env.${environment}`,
+            envFilePath: `.env`,
             isGlobal: true,
         }),
         MongooseModule.forRoot(process.env.MONGODB_WRITE_CONNTECTION_STRING, 
