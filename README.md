@@ -2,6 +2,13 @@
 
 ## Nest Rest Api - Shkarsmode
 ```bash
+#mongoose
+$ npm i @nestjs/mongoose mongoose
+$ npm i @types/mongoose 
+
+#config
+$ npm i @nestjs/config  
+
 # lodash
 $ npm add lodash
 $ npm add @types/lodash
@@ -9,6 +16,8 @@ $ npm add @types/lodash
 # bcrypt
 $ npm i bcrypt
 $ npm add @types/bcrypt
+
+
 ```
 
 <p align="center">
