@@ -5,6 +5,7 @@ import { CreateProductDto } from 'src/products/dto/create-product.dto';
 import { UpdateProductDto } from 'src/products/dto/update-product.dto';
 import { Product, ProductDocument } from 'src/products/schemas/product.schema';
 
+
 @Injectable()
 export class ProductsService {
 
@@ -12,14 +13,14 @@ export class ProductsService {
         @InjectModel(Product.name) private productModel: Model<ProductDocument> 
     ) {}
 
-    async getAllProducts(): Promise<Product[]> {
-        return this.productModel.find().exec();         
+    async getAllProducts(): Promise<Product[]> {        
+        return this.productModel.find().exec();
         // * find() find all the documents and return Query
         // * exec() execute and return promise with searched elements
     }
 
     async getProductById(id: string): Promise<Product> {
-        return this.productModel.findById(id);
+        return this.productModel.findById(id); 
     }
 
     async createProduct(productDto: CreateProductDto): Promise<Product> {
