@@ -1,13 +1,15 @@
+<h1 align="center" >NestJS</h1>
 
 ## Nest Rest Api - Shkarsmode
 ```bash
+# lodash
 $ npm add lodash
 $ npm add @types/lodash
+
+# bcrypt
 $ npm i bcrypt
 $ npm add @types/bcrypt
 ```
-
-<h1 align="center" >NestJS</h1>
 
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
