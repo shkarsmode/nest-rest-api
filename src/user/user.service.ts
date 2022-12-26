@@ -35,5 +35,15 @@ export class UserService {
 		// * We recommend using .exec() because that gives you better stack traces.
 	}
 
+	async updateUser(id: string, user: IUser): Promise<IUser> {
+		return await this.userModel.findByIdAndUpdate(id, user, { new: true }).exec();
+		// * { new: true } returns updated object
+	}
+
+	async getSuggestedUsersName(name: string): Promise<string[]> {
+		const users: IUser[] = await this.userModel.find({firstName: {$regex: `^${name}`, $options:'i'} }).exec();
+		return users.map(user => user.firstName);
+	}
+
 
 }
