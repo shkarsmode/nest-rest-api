@@ -8,7 +8,6 @@ import { UserModule } from './user/user.module';
 
 const environment = process.env.NODE_ENV || 'development';
 
-
 @Module({
     imports: [
         ProductsModule,
