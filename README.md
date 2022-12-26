@@ -6,6 +6,9 @@
 $ npm i @nestjs/mongoose mongoose
 $ npm i @types/mongoose 
 
+#.env 
+MONGODB_WRITE_CONNTECTION_STRING=mongodb+srv://[nickname]:[password]@cluster0.rswa2yv.mongodb.net/?retryWrites=true&w=majority
+
 #config
 $ npm i @nestjs/config  
 
@@ -16,6 +19,7 @@ $ npm add @types/lodash
 # bcrypt
 $ npm i bcrypt
 $ npm add @types/bcrypt
+
 
 
 ```
